@@ -108,6 +108,15 @@ div.activity {
     margin-top: 1px;
 }
 
+.wrapper {
+    flex: 1 1 auto;
+    position: relative; padding-bottom: 60%; height: 0; overflow: hidden;
+}
+
+iframe {
+    position: absolute; top:0; left: 0; width: 100%; height: 100%;
+}
+
 </style>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111028797-1"></script>
@@ -142,6 +151,14 @@ div.activity {
 <a href="terrain/"><h3 class="btn">Location du terrain</h3></a>
 </div>
 </div>
+
+<h2>Calendrier</h2>
+<div class="wrapper">
+    <iframe src="https://calendar.google.com/calendar/embed?src=sqes1htrlqiuhbrkv5vgjt0nd0%40group.calendar.google.com&ctz=America%2FToronto" 
+            style="border: 0" frameborder="0" scrolling="no">
+    </iframe>
+</div>
+
 <footer>
 </footer>
 </div>
