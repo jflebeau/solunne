@@ -84,6 +84,19 @@ table, th, td {
   border: 1px solid black;
 }
 
+@media only screen and (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        /*padding: 5px;*/
+    }
+
+    .grid-item {
+        /*padding: 5px;*/
+        text-align: center;
+    }
+}
+
 </style>
 </head>
 <body>
@@ -105,21 +118,23 @@ table, th, td {
 <a name="top"></a>
 <h1>Règles</h1>
 
-<h3><a href="#securite">Règles générales et de sécurité</a></h3>
-<h3><a href="#base">Règles de base</a></h3>
-<h3><a href="#creation">Création de personnage</a></h3>
-<h3><a href="#dieux">Les dieux</a></h3>
-<h3><a href="#alignement">Les alignements</a></h3>
-<h3><a href="#race">Les races</a></h3>
-<h3><a href="#habilete">Les habiletés générales</a></h3>
-<h3><a href="#classe">Les classes</a></h3>
-<h3><a href="#potion">Les potions et poisons</a></h3>
-<h3><a href="#forge">La forge</a></h3>
-<h3><a href="#art">L'art elfique</a></h3>
-<h3><a href="#chant">Les chants du barde</a></h3>
-<h3>Les sorts du mage</h3>
-<h3>Les prières du mage</h3>
-<h3>Les sorts de l'élémentaliste</h3>
+<div class="grid-container">
+<div class="grid-item"><h3><a href="#securite">Règles générales et de sécurité</a></h3></div>
+<div class="grid-item"><h3><a href="#base">Règles de base</a></h3></div>
+<div class="grid-item"><h3><a href="#creation">Création de personnage</a></h3></div>
+<div class="grid-item"><h3><a href="#dieux">Les dieux</a></h3></div>
+<div class="grid-item"><h3><a href="#alignement">Les alignements</a></h3></div>
+<div class="grid-item"><h3><a href="#race">Les races</a></h3></div>
+<div class="grid-item"><h3><a href="#habilete">Les habiletés générales</a></h3></div>
+<div class="grid-item"><h3><a href="#classe">Les classes</a></h3></div>
+<div class="grid-item"><h3><a href="#potion">Les potions et poisons</a></h3></div>
+<div class="grid-item"><h3><a href="#forge">La forge</a></h3></div>
+<div class="grid-item"><h3><a href="#art">L'art elfique</a></h3></div>
+<div class="grid-item"><h3><a href="#chant">Les chants du barde</a></h3></div>
+<div class="grid-item"><h3>Les sorts du mage</h3></div>
+<div class="grid-item"><h3>Les prières du mage</h3></div>
+<div class="grid-item"><h3>Les sorts de l'élémentaliste</h3></div>
+</div>
 
 <div class="content">
 <a name="securite"></a>
