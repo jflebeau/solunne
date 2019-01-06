@@ -43,7 +43,6 @@ a:visited {
 .wrapper {
     flex: 1 1 auto;
     position: relative; padding-bottom: 60%; height: 0; overflow: hidden;
-    min-height: 200px;
 }
 
 iframe {
@@ -114,6 +113,10 @@ li.nav {
     margin-right: 0px;
 } 
 
+#calendar {
+    min-height: 200px;
+}
+
 </style>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111028797-1"></script>
@@ -153,7 +156,7 @@ li.nav {
 
 <h2>Calendrier</h2>
 <div class="wrapper">
-    <iframe src="https://calendar.google.com/calendar/embed?src=sqes1htrlqiuhbrkv5vgjt0nd0%40group.calendar.google.com&ctz=America%2FToronto" 
+    <iframe id="calendar", src="https://calendar.google.com/calendar/embed?src=sqes1htrlqiuhbrkv5vgjt0nd0%40group.calendar.google.com&ctz=America%2FToronto" 
             style="border: 0" frameborder="0" scrolling="no">
     </iframe>
 </div>
