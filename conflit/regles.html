@@ -80,6 +80,19 @@ li.nav {
     margin-bottom: 50px;
 }
 
+@media only screen and (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        /*padding: 5px;*/
+    }
+
+    .grid-item {
+        /*padding: 5px;*/
+        text-align: center;
+    }
+}
+
 </style>
 </head>
 <body>
@@ -98,9 +111,26 @@ li.nav {
     
 <div class="column">
 
+<a name="top"></a>
 <h1>Règles</h1>
 
+<div class="grid-container">
+    <div class="grid-item"><h3><a href="#principes">Principes</a></h3></div>
+    <div class="grid-item"><h3><a href="#securite">Règles générales et de sécurité</a></h3></div>
+    <div class="grid-item"><h3><a href="#base">Règles de base</a></h3></div>
+    <div class="grid-item"><h3><a href="#creation">Création de personnage</a></h3></div>
+    <div class="grid-item"><h3><a href="#habiletes">Les habiletés</a></h3></div>
+    <div class="grid-item"><h3><a href="#tableau">Tableau pour les sorts, etc.</a></h3></div>
+    <div class="grid-item"><h3><a href="#sorts">Sorts</a></h3></div>
+    <div class="grid-item"><h3><a href="#prieres">Prières</a></h3></div>
+    <div class="grid-item"><h3><a href="#musiques">Musiques</a></h3></div>
+    <div class="grid-item"><h3><a href="#runes">Runes</a></h3></div>
+    <div class="grid-item"><h3><a href="#potions">Potions</a></h3></div>
+    <div class="grid-item"><h3><a href="#poisons">Poisons</a></h3></div>
+</div>
+
 <div class="content">
+<a name="principes"></a>
 <h3>Principes</h3>
 <div style="text-align: left;">
     <p>Nous voulons limiter la fréquence du "hors jeu" par des règles simples (e.g. 3 points d'endurance pour tous et toutes les armes font des dégâts de 1).
@@ -112,7 +142,10 @@ li.nav {
 </div>
 </div>
 
+<a href="#top"><h3>Retour en haut</h3></a>
+
 <div class="content">
+        <a name="securite"></a>
 <h3>Règles générales et règles de sécurité</h3>
 <div style="text-align: left;">
 <p>Le manquement aux règles de sécurité entraînera des sanctions immédiates allant du simple avertissement à l'expulsion immédiate du terrain. 
@@ -167,7 +200,10 @@ li.nav {
 </div>
 </div>
 
+<a href="#top"><h3>Retour en haut</h3></a>
+
 <div class="content">
+        <a name="base"></a>
 <h3>Règles de base</h3>
 <div style="text-align: left;">
 <p>Une attaque : Souvent, la description d'une habileté précise que l'effet prend fin lorsque le personnage subit une attaque c’est-à-dire un coup valide ou encore un sort, prière ou toute autre habileté causant des dégâts (perte d'un point d'endurance) ou qui provoque un effet négatif. Un autre personnage qui prend le temps de vous secouer pendant 30 secondes est équivalent à une attaque. Une attaque ne met jamais fin aux effets d’une potion ou d’un poison.
@@ -268,8 +304,10 @@ li.nav {
 </div>
 </div>
 
-<div class="content">
+<a href="#top"><h3>Retour en haut</h3></a>
 
+<div class="content">
+        <a name="creation"></a>
 <h3>Création de personnages</h3>
 <div style="text-align: left;">
 <p>Lorsque vous créez un personnage en tant que joueur, nous nous attendons à ce qu’il s’agisse d’un protagoniste, c’est-à-dire un personnage qui aura un rôle actif dans le scénario (y compris vos propres initiatives). Si vous vous imaginez un personnage plutôt passif face au scénario (marchand, amuseur public, villageois, paysan, etc.), nous vous invitons à vous inscrire comme animateur.
@@ -346,8 +384,10 @@ li.nav {
 </div>
 </div>
 
-<div class="content">
+<a href="#top"><h3>Retour en haut</h3></a>
 
+<div class="content">
+        <a name="habiletes"></a>
 <h3>Liste des habiletés</h3>
 <div style="text-align: left;">
 <h4>Préambule</h4>
@@ -493,7 +533,7 @@ li.nav {
 
 <p><b>Musique de charme</b>
 <br>Prérequis : Aucun 
-<br>Nombre d'utilisations : voir le tableau du nombre de choix et de points
+<br>Nombre d'utilisations : voir le <a href="#tableau">tableau du nombre de choix et de points</a>.
 <br>Description : En chantant ou de jouant d’un instrument de musique, le personnage peut provoquer certains charmes. Une qualité d'interprétation minimale est exigée. Le ménestrel doit faire ces choix parmi les musiques de base ou nous en proposer de nouvelles. Des musiques spéciales peuvent être disponibles en jeu. Ces dernières ne sont pas considérées comme des habiletés et ont généralement des contraintes particulières.
 
 <p><b>Noblesse</b>
@@ -512,7 +552,7 @@ li.nav {
 <p><b>Potion</b>
 <br>Prérequis : Aucun 
 <br>Nombre d'utilisations : Voir description
-<br>Description : Le personnage sait manipuler les plantes et divers ingrédients que l'on retrouve dans la nature pour créer des potions, le nombre de choix est le même que pour les sorts (i.e. voir tableau).
+<br>Description : Le personnage sait manipuler les plantes et divers ingrédients que l'on retrouve dans la nature pour créer des potions, le nombre de choix est le même que pour les sorts (i.e. voir le <a href="#tableau">tableau</a>).
 Il doit faire ces choix parmi les potions de base ou nous en proposer de nouvelles. 
 Considérant le temps de recherche des ingrédients et de la préparation, 
 le personnage peut créer autant de potions qu'il le désire (on peut combiner la cueillette d’ingrédients pour plusieurs doses, mais on ne peut créer qu’une dose à la fois). D
@@ -525,7 +565,7 @@ Ces dernières ne sont pas considérées comme des habiletés et requièrent des
 
 <p><b>Prière</b>
 <br>Prérequis : Aucun 
-<br>Nombre d'utilisations : voir le tableau du nombre de choix et de points.
+<br>Nombre d'utilisations : voir le <a href="#tableau">tableau du nombre de choix et de points</a>.
 <br>Description : Le personnage peut recevoir une parcelle d'essence divine du dieu qui a marqué son sang et la manipuler pour obtenir certains effets. Le prêtre doit choisir des prières de base ou nous en suggérer de nouvelles. Des prières spéciales (parfois appelés messes ou cérémonies) peuvent être disponibles en jeu. Ces dernières ne sont pas considérées comme des habiletés et ont généralement des contraintes particulières.
 
 <p><b>Réparation d'armure</b>
@@ -547,7 +587,7 @@ Ces dernières ne sont pas considérées comme des habiletés et requièrent des
 
 <p><b>Rune</b>
 <br>Prérequis : Aucun 
-<br>Nombre d'utilisations : voir le tableau du nombre de choix et de points.
+<br>Nombre d'utilisations : voir le <a href="#tableau">tableau du nombre de choix et de points</a>.
 <br>Description : Le personnage peut inscrire des runes produisant certains effets. Le runiste doit faire ces choix parmi les runes de bases ou nous proposer de nouvelles. Des runes spéciales peuvent être disponibles en jeu. Ces dernières ne sont pas considérées comme des habiletés et ont généralement des contraintes particulières.
 
 <p><b>Second souffle</b>
@@ -557,7 +597,7 @@ Ces dernières ne sont pas considérées comme des habiletés et requièrent des
 
 <p><b>Sort</b>
 <br>Prérequis : Aucun 
-<br>Nombre d'utilisations : voir le tableau du nombre de choix et de points
+<br>Nombre d'utilisations : voir le <a href="#tableau">tableau du nombre de choix et de points</a>.
 <br>Description : Le personnage peut canaliser l'énergie magique et la façonner pour produire certains effets. Le mage doit choisir des sorts de base ou nous en suggérer de nouveaux. Des sorts spéciaux (parfois appelés rituels) peuvent être disponibles en jeu. Ces derniers ne sont pas considérés comme des habiletés et ont généralement des contraintes particulières.
 
 <p><b>Spiritisme<sup>+</sup></b>
@@ -573,57 +613,66 @@ Ces dernières ne sont pas considérées comme des habiletés et requièrent des
 <br>Prérequis : Aucun
 <br>Description : Le personnage peut voler un objet porté par un autre personnage. Pour se faire, il doit toucher l'objet en question pendant 10 secondes sans être vu ou senti par sa victime. S'il est vu par une autre personne, mais que celle-ci n'avertit pas la victime, le vol fonctionne normalement. S'il réussit, la victime doit lui remettre l'objet en question et faire comme si elle ne s'en était jamais rendu compte. Si l'objet en question est un contenant comme une bourse ou un sac, le voleur pige un objet ou une poignée d'écus. Un objet tenu dans une main ne peut être volé. Les effets personnels ne peuvent être volés. 
 </div>
-<table style="width:100%">
-<tr>
-    <th>Points d’habileté</th>
-    <th>Nombre de choix (sorts, prières, musiques, runes, potions et poisons)</th> 
-    <th>Nombre de points d’utilisation<br>(non applicable aux potions ou poisons)</th>
-</tr>
-<tr>
-    <td>1</td>
-    <td>2</td> 
-    <td>6</td>
-</tr>
-<tr>
-    <td>2</td>
-    <td>3</td> 
-    <td>10</td>
-</tr>
-<tr>
-    <td>3</td>
-    <td>4</td> 
-    <td>14</td>
-</tr>
-<tr>
-    <td>4</td>
-    <td>6</td> 
-    <td>18</td>
-</tr>
-<tr>
-    <td>5</td>
-    <td>8</td> 
-    <td>22</td>
-</tr>
-<tr>
-    <td>6</td>
-    <td>9</td> 
-    <td>28</td>
-</tr>
-<tr>
-    <td>7</td>
-    <td>10</td> 
-    <td>34</td>
-</tr>
-<tr>
-    <td>8</td>
-    <td>12</td> 
-    <td>40</td>
-</tr>
-</table>
-
 </div>
 
+<a href="#top"><h3>Retour en haut</h3></a>
+
 <div class="content">
+        <a name="tableau"></a>
+<h3>Tableau pour les sorts, prières, runes, musiques, potions et poisons</h3>
+<table style="width:100%">
+    <tr>
+        <th>Points d’habileté</th>
+        <th>Nombre de choix<br> (sorts, prières, musiques, runes, potions et poisons)</th> 
+        <th>Nombre de points d’utilisation<br>(ne s'applique pas aux potions et poisons)</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td> 
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>3</td> 
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>4</td> 
+        <td>14</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>6</td> 
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>8</td> 
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>9</td> 
+        <td>28</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>10</td> 
+        <td>34</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>12</td> 
+        <td>40</td>
+    </tr>
+    </table>
+</div>
+
+<a href="#top"><h3>Retour en haut</h3></a>
+
+<div class="content">
+        <a name="sorts"></a>
 <h3>Les sorts</h3>
 <div style="text-align: left;">
 <p>Tout mage peut créer à volonté une lumière magique (e.g. en utilisant un “light stick”, une lampe à DEL, mais pas une lampe à faisceau) qui n’est pas affectée par la prière “Ténèbres d’Uter” et autres effets similaires.
@@ -726,7 +775,10 @@ Ces dernières ne sont pas considérées comme des habiletés et requièrent des
 </div>
 </div>
 
+<a href="#top"><h3>Retour en haut</h3></a>
+
 <div class="content">
+        <a name="prieres"></a>
 <h3>Les prières</h3>
 <div style="text-align: left;">
 <p>Tout prêtre peut détecter la présence d’essence divine, incluant la nature du sang d’une créature, en se concentrant pendant quelques instants. La présence d’un animateur ou d’un organisateur peut être nécessaire.
@@ -842,7 +894,10 @@ Ces dernières ne sont pas considérées comme des habiletés et requièrent des
 </div>
 </div>
 
+<a href="#top"><h3>Retour en haut</h3></a>
+
 <div class="content">
+        <a name="musiques"></a>
 <h3>Les musiques de charme</h3>
 <div style="text-align: left;">
 <p>Les musiques de charme doivent être interprétées par le chant ou un instrument (personnel ou trouver en jeu). Il n'y a pas de paroles ou de partitions déterminées pour les musiques de base, chaque ménestrel est libre de son interprétation. Par contre, la même interprétation doit être utilisée pour une musique donnée et différente pour chacune des musiques choisies. Le charme prend effet après 30 secondes d’interprétation.
@@ -899,7 +954,11 @@ Ces dernières ne sont pas considérées comme des habiletés et requièrent des
 </div>
 </div>
 
+<a href="#top"><h3>Retour en haut</h3></a>
+
+
 <div class="content">
+        <a name="runes"></a>
 <h3>Les runes</h3>
 <div style="text-align: left;">
 <p>Tout d'abord, il faut faire la différence entre les deux types de runes bien distinctes que vous pourrez rencontrer dans le monde de Solunne.
@@ -955,7 +1014,11 @@ Ces dernières ne sont pas considérées comme des habiletés et requièrent des
 </div>
 </div>
 
+<a href="#top"><h3>Retour en haut</h3></a>
+
+
 <div class="content">
+        <a name="potions"></a>
 <h3>Les potions</h3>
 <div style="text-align: left;">
 <p>Pour préparer une potion, il faut disposer de tous les ingrédients de la recette, d’eau et d'une fiole (personnelle ou trouver en jeu). Le personnage doit mettre tous les ingrédients dans la fiole avec de l’eau et simuler une préparation pendant 15 minutes. Ce délai n'englobe pas le temps de recherche des ingrédients.
@@ -1002,7 +1065,10 @@ Ces dernières ne sont pas considérées comme des habiletés et requièrent des
 </div>
 </div>
 
+<a href="#top"><h3>Retour en haut</h3></a>
+
 <div class="content">
+        <a name="poisons"></a>
 <h3>Les poisons</h3>
 <div style="text-align: left;">
 <p>Pour préparer un poison, les mêmes règles que pour les potions s’appliquent (voir ci-haut).
