@@ -39,6 +39,7 @@ a:visited {
 }
 
 body {
+    margin: 0px;
     background-color:#000000;
 }
 
@@ -53,7 +54,9 @@ body {
     max-width: 800px;
     text-align:center;
     margin: 0 auto;
-    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0px;
 }
 
 .logo {
@@ -108,14 +111,48 @@ div.activity {
     margin-top: 1px;
 }
 
+#calendar {
+    padding-top:160px;
+}
+
 .wrapper {
     flex: 1 1 auto;
-    position: relative; padding-bottom: 60%; height: 0; overflow: hidden;
+    position: relative; padding-bottom: 56.25%;  height: 0; overflow: hidden;
 }
 
 iframe {
     position: absolute; top:0; left: 0; width: 100%; height: 100%;
     min-height: 200px;
+}
+
+@media only screen and (min-width: 768px) {
+    li.nav {
+        display: inline;
+        margin-right: 25px;
+    }
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    margin-top:5px;
+}
+
+div.nav {
+    text-align:center;
+    width: 100%;
+    background-color:#000000;
+    margin: 0 auto; 
+    font-family: 'Merriweather', serif;
+}
+
+li.nav {
+    color: #FFFFF0;
+    padding: 0px;
+    margin-top:5px;
+    margin-bottom:0px;
+    margin-left: 0;
 }
 
 </style>
@@ -129,13 +166,24 @@ iframe {
 </script>
 </head>
 <body>
-<div class="column">
+
 <header>
+    <div class="nav">
+    <ul class="nav">
+            <a class="nav" href="iledeslegendes"><li class="nav">ILE</li></a>
+        <a class="nav" href="conflit"><li class="nav">CONFLIT</li></a>
+        <a class="nav" href="terrain"><li class="nav">TERRAIN</li></a>
+        <a class="nav" href="#calendrier"><li class="nav">CALENDRIER</li></a>
+        <a class="nav" href="#parternaires"><li class="nav">PARTENAIRES</li></a>
+    </ul>
+    </div>
+</header>  
+
+<div class="column">
 <h1>Solunne</h1>
 <h2>Activités de Grandeur Nature Médiéval Fantastique</h2>
 <h3>Maricourt (Estrie)</h3>
 <img class="logo" src="Logo_Site.png">
-</header>
 <div class="flex-container">
 <div class="activity">
 <a href="iledeslegendes/">
@@ -153,12 +201,19 @@ iframe {
 </div>
 </div>
 
+<a name="calendrier"></a>
 <h2>Calendrier</h2>
-<div class="wrapper">
+<div class="wrapper" id="calendar">
     <iframe src="https://calendar.google.com/calendar/embed?src=sqes1htrlqiuhbrkv5vgjt0nd0%40group.calendar.google.com&ctz=America%2FToronto" 
             style="border: 0" frameborder="0" scrolling="no">
     </iframe>
 </div>
+
+<a name="parternaires"></a>
+<h2>Partenaires</h2>
+
+<h3><a href="https://www.portaildesbrumes.com/">Le portail des brumes</a></h3>
+<h3><a href="https://www.galiardim.com/">Les terres de Galiardim</a></h3>
 
 <footer>
 </footer>

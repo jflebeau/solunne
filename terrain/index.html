@@ -31,7 +31,9 @@ a:visited {
     margin-right: auto ;
     color:#FFFFF0;
     margin: 0 auto;
-    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0px;
     font-family: 'Merriweather', serif;
 }
 
@@ -42,7 +44,11 @@ a:visited {
 
 .wrapper {
     flex: 1 1 auto;
-    position: relative; padding-bottom: 100%; height: 0; overflow: hidden;
+    position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
+}
+
+#calendar {
+    padding-top:160px;
 }
 
 iframe {
@@ -89,6 +95,13 @@ div.top {
     }
 }
 
+@media only screen and (min-width: 768px) {
+    li.nav {
+        display: inline;
+        margin-right: 25px;
+    }
+}
+
 ul.nav {
     list-style-type: none;
     margin: 0px;
@@ -123,6 +136,7 @@ li.nav {
   gtag('config', 'UA-111028797-1');
 </script>
 </head>
+<body>
 
 <header>
     <div class="nav">
@@ -138,7 +152,7 @@ li.nav {
 
 <p>852 route 222, Maricourt, J0E 2L0</p>
 
-<p>Contactez nous sur <a href="https://www.facebook.com/pg/gnsolunne/"> Facebook</a>, par <a href="solunne@hotmail.com">courriel</a>
+<p>Contactez nous sur <a href="https://www.facebook.com/pg/gnsolunne/"> Facebook</a>, par <a href="mailto:solunne@hotmail.com">courriel</a>
 ou au <a href="tel:+14387282143">(438) 728-2143</a></p>
 
 <div class="top">
@@ -159,8 +173,8 @@ ou au <a href="tel:+14387282143">(438) 728-2143</a></p>
 <p>Pour 2019, il reste le village pour les dates suivantes : 24-25-26 mai / 28-29-30 juin / 12-13-14 juillet / 6-7-8 septembre / 4-5-6 octobre. 
 <p>Le 11-12-13 octobre il y a des possibilités, mais c'est la drag de motoneige dans le champs entre le village et le bois (une journée selon la météo).
 
-<div class="wrapper">
-    <iframe id="calendar", src="https://calendar.google.com/calendar/embed?src=sqes1htrlqiuhbrkv5vgjt0nd0%40group.calendar.google.com&ctz=America%2FToronto" 
+<div class="wrapper" id="calendar">
+    <iframe src="https://calendar.google.com/calendar/embed?src=sqes1htrlqiuhbrkv5vgjt0nd0%40group.calendar.google.com&ctz=America%2FToronto" 
             style="border: 0" frameborder="0" scrolling="no" width="800" height="600">
     </iframe>
 </div>
