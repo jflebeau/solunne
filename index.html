@@ -178,6 +178,25 @@ li.nav {
 </head>
 <body>
 
+    <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v5.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
 <header>
     <div class="nav">
     <ul class="nav">
@@ -231,6 +250,15 @@ li.nav {
 <h3><a href="https://gnlunaris.com/">Lunaris</a></h3>
 <footer>
 </footer>
+</div>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="458488974633069"
+theme_color="#a20000"
+logged_in_greeting="Bonjour, n'hésitez pas à communique avec nous si vous avec des question."
+logged_out_greeting="Bonjour, n'hésitez pas à communique avec nous si vous avec des question.">
 </div>
 </body>
 </html>
